@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
                 mainNav.classList.add('is-fixed');
             }
-        }                                                
+        }                                              
         scrollPos = currentTop;
     });
 })
