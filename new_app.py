@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from os import getenv
+from os import getenv7
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -15,9 +15,11 @@ def post():
 @app.route('/about', strict_slashes=False)
 def about():
     return render_template('about.html')
+
 @app.route('/contact', strict_slashes=False)
 def contact():
     return render_template('contact.html')
+
 if __name__ == "__main__":
     host = getenv("HBNB_API_HOST")
     port = getenv("HBNB_API_PORT")
